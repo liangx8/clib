@@ -9,10 +9,10 @@ TARGET=test
 
 #CFLAGS+=-O2
 #CFLAGS+=-g
-ifeq (${OPTS}x, x)
+ifeq (${OPTC}x, x)
 	CFLAGS+=-O2
 else
-	CFLAGS+=${OPTS}
+	CFLAGS+=${OPTC}
 endif
 SRCS=$(wildcard *.c)
 #SRCS=$(shell find . -name \*.c -and -type f)

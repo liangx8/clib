@@ -24,6 +24,19 @@
 			},
 			"problemMatcher":[],
 			"detail": "cleaning"
+		},{
+			"type": "shell",
+			"label": "跟踪代码",
+			"command": "make",
+			"args": ["OPTC=-g"],
+			"options": {
+				"cwd": "${workspaceFolder}/src"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"detail": "编译调试，跟踪程序"
+
 		}
 	]
 }
